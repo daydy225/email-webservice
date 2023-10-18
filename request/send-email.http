@@ -1,0 +1,3 @@
+GET http://localhost:5000/api/send-email
+
+Content-Type: application/json
