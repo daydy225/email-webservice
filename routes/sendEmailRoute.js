@@ -3,6 +3,6 @@ const sendEmail = require('../controllers/sendEmailController');
 
 const router = express.Router();
 
-router.get('/send-email', sendEmail);
+router.post('/send-email', sendEmail);
 
 module.exports = router;

@@ -1,8 +1,9 @@
-const emailService = require('../utils/email_config');
+const emailService = require('../service/emailService');
 
 const sendEmail = async (req, res) => {
   try {
-    const result = await emailService();
+    const result = await emailService(req.body);
+
     if (result)
       return res
         .status(result?.status)
